@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE0498CCDF6A40E314C46ED7 /* Pods_TestX123.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90DC5ECB9EF7155D7BF2F0D /* Pods_TestX123.framework */; };
 		DD105FF22338A702001EC420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD105FF12338A702001EC420 /* AppDelegate.swift */; };
 		DD105FF42338A702001EC420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD105FF32338A702001EC420 /* ViewController.swift */; };
 		DD105FF72338A702001EC420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD105FF52338A702001EC420 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64391F47C9D2C8AB2B642400 /* Pods-TestX123.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestX123.debug.xcconfig"; path = "Target Support Files/Pods-TestX123/Pods-TestX123.debug.xcconfig"; sourceTree = "<group>"; };
+		86F930110E76A594995DD374 /* Pods-TestX123.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestX123.release.xcconfig"; path = "Target Support Files/Pods-TestX123/Pods-TestX123.release.xcconfig"; sourceTree = "<group>"; };
+		A90DC5ECB9EF7155D7BF2F0D /* Pods_TestX123.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestX123.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD105FEE2338A702001EC420 /* TestX123.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestX123.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD105FF12338A702001EC420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD105FF32338A702001EC420 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE0498CCDF6A40E314C46ED7 /* Pods_TestX123.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF0AD6818F8557DB3C241EB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A90DC5ECB9EF7155D7BF2F0D /* Pods_TestX123.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD105FE52338A702001EC420 = {
 			isa = PBXGroup;
 			children = (
 				DD105FF02338A702001EC420 /* TestX123 */,
 				DD105FEF2338A702001EC420 /* Products */,
+				E5C1A55C013E62B6B9AAD90E /* Pods */,
+				CF0AD6818F8557DB3C241EB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = TestX123;
 			sourceTree = "<group>";
 		};
+		E5C1A55C013E62B6B9AAD90E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64391F47C9D2C8AB2B642400 /* Pods-TestX123.debug.xcconfig */,
+				86F930110E76A594995DD374 /* Pods-TestX123.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD1060002338A702001EC420 /* Build configuration list for PBXNativeTarget "TestX123" */;
 			buildPhases = (
+				2B2492AB611CA185CDB178A8 /* [CP] Check Pods Manifest.lock */,
 				DD105FEA2338A702001EC420 /* Sources */,
 				DD105FEB2338A702001EC420 /* Frameworks */,
 				DD105FEC2338A702001EC420 /* Resources */,
@@ -129,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B2492AB611CA185CDB178A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestX123-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD105FEA2338A702001EC420 /* Sources */ = {
@@ -280,18 +330,19 @@
 		};
 		DD1060012338A702001EC420 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64391F47C9D2C8AB2B642400 /* Pods-TestX123.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 6F5K77MS8G;
+				DEVELOPMENT_TEAM = T8D3DHW53C;
 				INFOPLIST_FILE = TestX123/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lidong.test.TestX123;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneothergame.yoga.fitness.workouts.beginners;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "SKY DEV";
+				PROVISIONING_PROFILE_SPECIFIER = "OOG200 Push Dev2";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,18 +350,19 @@
 		};
 		DD1060022338A702001EC420 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F930110E76A594995DD374 /* Pods-TestX123.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 6F5K77MS8G;
+				DEVELOPMENT_TEAM = T8D3DHW53C;
 				INFOPLIST_FILE = TestX123/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lidong.test.TestX123;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneothergame.yoga.fitness.workouts.beginners;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "SKY DEV";
+				PROVISIONING_PROFILE_SPECIFIER = "OOG200 Push Dev2";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
