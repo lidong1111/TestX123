@@ -4,12 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-TestX123.xcscheme_^#shared#^_</key>
+		<key>Pods-TestX123.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
